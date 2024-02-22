@@ -1,0 +1,68 @@
+{% extends 'atend_tecnico_digital/mobile/_partials/aba_main.html' %}
+{% load static %}
+{% block extra_head %}
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static '\mobile\styles\aba_home.css' %}">
+{% endblock %}
+{% block content %}    
+    
+    <div class="ola-usuario">
+        Olá, <b>Allan Ribeiro</b>
+        <!-- Fazer Login -->
+    </div>
+
+    <!-- Novo Atendimento -->
+    <div class="card-atendimento" id="novoAtendimento">
+        <div class="image-card">
+            <!-- <i class="fa-regular fa-comments"></i> -->
+            <i class="material-symbols-outlined">video_chat</i>
+        </div>
+
+        <div class="textos-card">
+            <div class="titulo-card">
+                Novo Atendimento
+            </div>
+            <div class="texto-card">
+                Faça o agendamento para falar com um técnico do Senar.<br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Novo Atendimento -->
+    <!-- <div class="card-atendimento">
+        <div class="image-card">
+            <i class="fa-regular fa-calendar"></i>
+        </div>
+
+        <div class="textos-card">
+            <div class="titulo-novo-atendimento">
+                Atendimento Agendado
+            </div>
+            <div class="texto-novo-atendimento">
+                Data: 23/02/2024<br>
+                Horário: 14:30<br>
+                Assunto: Manejo Sanitário<br>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Atendimento Agendado
+    <div class="card-atendimento">
+        <div class="image-card">
+            <i class="fa-regular fa-calendar"></i>
+        </div>
+
+        <div class="textos-card">
+            <div class="titulo-novo-atendimento">
+                Atendimento Agendado
+            </div>
+            <div class="texto-novo-atendimento">
+                Data:
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Scripts -->
+    <script src="{% static 'mobile/js/aba_home.js' %}"></script>
+
+{% endblock %}

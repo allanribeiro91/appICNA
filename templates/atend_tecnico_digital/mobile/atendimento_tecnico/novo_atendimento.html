@@ -1,0 +1,42 @@
+{% extends 'atend_tecnico_digital/mobile/_partials/tela_main.html' %}
+{% load static %}
+{% block extra_head %}
+    <title>Novo Atendimento</title>
+    <link rel="stylesheet" href="{% static '\mobile\styles\tela_novo_atendimento.css' %}">
+{% endblock %}
+{% block content %}    
+    
+    <!-- Cabeçalho -->
+    <div class="cabecalho">
+        <div class="titulo">
+            <div class="titulo-imagem">
+                <i class="material-symbols-outlined" style="font-size: 14vw;">edit_calendar</i>
+            </div>
+            <div class="titulo-texto">
+                <b>Agendar</b> Novo Atendimento
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-novo-atendimento">
+        <div class="form-floating">
+            {{ form.atividade_produtiva }}
+            <label>{{ form.atividade_produtiva.label }}</label>
+        </div>
+        <div class="form-floating">
+            {{ form.topico }}
+            <label>{{ form.topico.label }}</label>
+        </div>
+        <div class="form-floating">
+            {{ form.data }}
+            <label>{{ form.data.label }}</label>
+        </div>
+        <div class="form-floating">
+            {{ form.hora }}
+            <label>{{ form.hora.label }}</label>
+        </div>
+    </div>
+    
+
+{% endblock %}

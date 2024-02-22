@@ -1,0 +1,55 @@
+.ola-usuario {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5vh;
+    margin-bottom: 3vh;
+    
+}
+
+.card-atendimento {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e4e4;
+    padding: 1vh;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.image-card {
+    width: 35vw;
+    font-size: 10vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #005B2A; */
+}
+
+.material-symbols-outlined {
+    font-size: 16vw;
+    text-align: center;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.textos-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-card {
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5vh;
+    /* color: #005B2A; */
+}
+
+.texto-card {
+    font-size: 2vh;
+}
+
